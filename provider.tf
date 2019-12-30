@@ -1,6 +1,6 @@
 provider "aws" {
   version = "~> 2.0"
-  access key = "AKIATOUVDBKIM2ZSZ2QS"
-  secret key = "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"
+  access key = "${var.access_key}"
+  secret key = "${var.secret_key}"
   region  = "${var.aws_region}"
 }
