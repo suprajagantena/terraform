@@ -1,6 +1,6 @@
 resource "aws_vpc" "dev" {
   cidr_block       = "10.0.0.0/16"
-  instance_tenancy = "default"
+  instance_tenancy = "dedicated"
 
   tags = {
     Name = "Dev"
@@ -8,14 +8,14 @@ resource "aws_vpc" "dev" {
 }
 resource "aws_vpc" "qa" {
   cidr_block       = "10.0.0.0/18"
-  instance_tenancy = "default"
+  instance_tenancy = "dedicated"
 
   tags = {
     Name = "QA"
   }
 }resource "aws_vpc" "prd" {
   cidr_block       = "10.0.0.0/24"
-  instance_tenancy = "default"
+  instance_tenancy = "dedicated"
 
   tags = {
     Name = "Prd"
