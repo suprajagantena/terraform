@@ -3,6 +3,14 @@ variable "aws_region" {
   default = "us-east-1"
 }
 
+variable "access_key" {
+  default = "AKIATOUVDBKIM2ZSZ2QS"
+ }
+
+variable "secret_key" {
+  default = "JoImYbMBTcpHHyN08YvUEr5ewzH+oQFKDMPFt5ea"
+ }
+
 variable "vpc_cidr" {
   description = "CIDR for the VPC"
   default = "10.0.0.0/16,10.0.0.0/18,10.0.0.0/24"
