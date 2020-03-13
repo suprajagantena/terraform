@@ -13,7 +13,8 @@ resource "aws_vpc" "qa" {
   tags = {
     Name = "QA"
   }
-}resource "aws_vpc" "prd" {
+}
+resource "aws_vpc" "prd" {
   cidr_block       = "10.0.0.0/24"
   instance_tenancy = "dedicated"
 
