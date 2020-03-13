@@ -38,7 +38,7 @@ resource "aws_subnet" "private" {
   }
 }
 resource "aws_subnet" "private" {
-  vpc_id     = "${aws_vpc.dev.id}"
+  vpc_id     = "aws_vpc.dev.id"
   cidr_block = "10.0.3.0/16"
 
   tags = {
@@ -46,7 +46,7 @@ resource "aws_subnet" "private" {
   }
 }
 resource "aws_subnet" "public" {
-  vpc_id     = "${aws_vpc.qa.id}"
+  vpc_id     = "aws_vpc.qa.id"
   cidr_block = "10.0.1.0/18"
 
   tags = {
@@ -54,7 +54,7 @@ resource "aws_subnet" "public" {
   }
 }
 resource "aws_subnet" "private" {
-  vpc_id     = "${aws_vpc.qa.id}"
+  vpc_id     = "aws_vpc.qa.id"
   cidr_block = "10.0.2.0/18"
 
   tags = {
@@ -62,7 +62,7 @@ resource "aws_subnet" "private" {
   }
 }
 resource "aws_subnet" "private" {
-  vpc_id     = "${aws_vpc.qa.id}"
+  vpc_id     = "aws_vpc.qa.id"
   cidr_block = "10.0.3.0/18"
 
   tags = {
@@ -70,7 +70,7 @@ resource "aws_subnet" "private" {
   }
 }
 resource "aws_subnet" "public" {
-  vpc_id     = "${aws_vpc.prd.id}"
+  vpc_id     = "aws_vpc.prd.id"
   cidr_block = "10.0.1.0/24"
 
   tags = {
@@ -78,7 +78,7 @@ resource "aws_subnet" "public" {
   }
 }
 resource "aws_subnet" "private" {
-  vpc_id     = "${aws_vpc.prd.id}"
+  vpc_id     = "aws_vpc.prd.id"
   cidr_block = "10.0.2.0/24"
 
   tags = {
@@ -86,7 +86,7 @@ resource "aws_subnet" "private" {
   }
 }
 resource "aws_subnet" "private" {
-  vpc_id     = "${aws_vpc.prd.id}"
+  vpc_id     = "aws_vpc.prd.id"
   cidr_block = "10.0.3.0/24"
 
   tags = {
