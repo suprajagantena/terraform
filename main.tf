@@ -30,7 +30,7 @@ resource "aws_subnet" "public" {
     Name = "devpubsub"
   }
 }
-resource "aws_subnet" "private" {
+resource "aws_subnet" "private1" {
   vpc_id     = "aws_vpc.dev.id"
   cidr_block = "10.0.2.0/16"
 
@@ -38,7 +38,7 @@ resource "aws_subnet" "private" {
     Name = "devprisub"
   }
 }
-resource "aws_subnet" "private" {
+resource "aws_subnet" "private2" {
   vpc_id     = "aws_vpc.dev.id"
   cidr_block = "10.0.3.0/16"
 
